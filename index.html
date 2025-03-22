@@ -154,7 +154,18 @@
           ¡contáctanos!</p>
         <p>🔹 Si vous êtes basque, habitez dans la région de Portland et souhaitez rencontrer davantage de personnes de
           la communauté basque, Contactez-nous!</p>
-        <a href="mailto:justingreen89@gmail.com"><button class="btn-red">Email Organizer</button></a>
+        <button id="openModal" class="btn-red">Email Organizer</button>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe width="600" height="600"
+            src="https://sibforms.com/serve/MUIFAC6S4_9cqt6a8Jj7LGxKeY1j5bM2dfhBXzm2-6FIcaq1j85ELTqM8aoCixmWLIbg2uEQ_jR_pYu6eIXPTD-hkLGWpgcgO0SEeyT2nY-0sPHzWgo4YlxbsswJ28fg3KZwJarRrRE9QC-gciabAVtYwME_F3E1ZE-Si1hAl1P7nTsM1AeNm7HpPLGwnMV8aNijQL_LygumWqv4"
+            frameborder="0" scrolling="auto" allowfullscreen
+            style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+        </div>
+        <!-- End Modal -->
       </div>
       <div class="about-item-2">
         <h3>Events</h3>
@@ -193,9 +204,29 @@
   <footer>
     <section class="footer-content">Web Design by <a
         href="https://www.upwork.com/freelancers/~01e4d375a7b7b573c9?mp_source=share" target="blank"
-        rel="noopener noreferrer">Benjamin Green</a>
+        rel="noopener noreferrer">Ben K Green</a>
     </section>
   </footer>
+  <!-- Modal script -->
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
