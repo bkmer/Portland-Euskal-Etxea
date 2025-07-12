@@ -154,7 +154,7 @@
           ¡contáctanos!</p>
         <p>🔹 Si vous êtes basque, habitez dans la région de Portland et souhaitez rencontrer davantage de personnes de
           la communauté basque, Contactez-nous!</p>
-        <button id="openModal" class="btn-red">Email Organizer</button>
+        <button class="openModalBtn btn-red">Email Organizer</button>
       </div>
       <!-- The Modal -->
       <div id="myModal" class="modal">
@@ -181,7 +181,7 @@
           <li>Mendizaletasuna (hiking)</li>
         </ul>
         <p>Thanks for your interest in our new club as we seek to get more established!</p>
-        <button id="openModal" class="btn-green">Email Organizer</button>
+        <button class="openModalBtn btn-green">Email Organizer</button>
       </div>
     </section>
     <section id="members">
@@ -209,12 +209,18 @@
   </footer>
   <!-- Modal script -->
   <script>
+    // Modal functionality for opening and closing the email organizer form.
+    // When any button with class 'openModalBtn' is clicked, the modal is displayed.
+    // Clicking the 'close' span or clicking outside the modal content will close the modal.
+
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("openModal");
+    var btns = document.getElementsByClassName("openModalBtn");
     var span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function () {
-      modal.style.display = "block";
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = function () {
+        modal.style.display = "block";
+      }
     }
 
     span.onclick = function () {
@@ -226,6 +232,8 @@
         modal.style.display = "none";
       }
     }
+  </script>
+  }
   </script>
 </body>
 
