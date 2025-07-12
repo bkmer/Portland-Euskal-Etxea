@@ -122,7 +122,7 @@ h4 {
 h1,
 h2,
 h3 {
-  font-family: "Haritzag", "Libre Baskerville", sans-serif;
+  font-family: "Haritzag", "Libre Baskerville", serif;
 }
 
 p {
@@ -182,7 +182,7 @@ li {
   left: 0;
   width: 100%;
   border-top: 2px solid #fef1e1;
-  z-index: 999;
+  z-index: 2;
 }
 
 #about-container {
@@ -230,9 +230,6 @@ li {
 button {
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-button {
   padding: 1rem;
   border: none;
   border-radius: 8px;
